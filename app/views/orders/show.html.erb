@@ -36,7 +36,9 @@
             name: item[:name], 
             description: item[:description], 
             price: item[:price_cents] / 100, 
-            quantity: selected_item[:quantity].to_i 
+            quantity: selected_item[:quantity].to_i ,
+            image: item,
+            product: item
           %>
 
         <% end %>
