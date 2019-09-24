@@ -21,9 +21,7 @@ RSpec.feature "Visitor navigates to home page", type: :feature, js: true do
     visit root_path
 
     # DEBUG / VERIFY
-    # expect(page).to have_css 'article.product', count: 10
-    # click_link 'Super shirt'
-    # find('article').click
+ 
     find('article h4', match: :first).click
 
     sleep 4
